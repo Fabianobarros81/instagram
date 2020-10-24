@@ -15,8 +15,7 @@ function img01 (){
 		    document.getElementById("trocarimg").src=imag[i];
             i++;
         }
-        setTimeout(img01, 10000);
+        setTimeout(img01, 5000);
         //w++;
     // };
 }
-setTimeout(img01, 0);
