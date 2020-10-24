@@ -10,12 +10,10 @@ function img01 (){
 	
     		document.getElementById("trocarimg").src=imag[i];
             i++;
-            // setTimeout(img01, 10000);
 	    }else {
 		    i = 0;
 		    document.getElementById("trocarimg").src=imag[i];
             i++;
-            // setTimeout(img01, 10000);
         }
         setTimeout(img01, 10000);
         //w++;
