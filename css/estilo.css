@@ -8,7 +8,7 @@
 }
 body {
     width: 100%;
-    min-height: 100vh;
+    min-height: 10px;
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
@@ -16,24 +16,14 @@ body {
     justify-content: center;
 }
 body div.wrapper-instagram {
-    /* display: inline-block; */
-    position: relative;
-    top: -55px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 div .esq {
-    width: 454px;
+    width: 419px;
     height: 618px;
     background-image: url("../img/mobile.png");
-    display: inline-block;
-}
-div .dir {
-    width: 454px;
-    height: 618px;
-    display: inline-block;
-    position: relative;
-    top: 138px;
-    margin: -28px;
 }
 div .esq #trocarimg{
     width: 240px;
@@ -41,15 +31,24 @@ div .esq #trocarimg{
     position: relative;
     left: 151px;
     top: 100px;
-    /* transition-delay : 1s; */
+}
+div .dir {
+    width: 370px;
+    height: 618px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 div .dir .login01 {
     width: 350px;
-    height: 338px;
+    height: 355px;
     background-color: white;
     border: 1px solid silver;
-    padding: 15px;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 div .dir .login01 h1.lginst {
     background-image: url("../img/32f0a4f27407.png");
@@ -57,122 +56,118 @@ div .dir .login01 h1.lginst {
     background-position: 0 -130px;
     height: 51px;
     width: 175px;
-    margin: auto;
-    top: 15px;
-    position: relative;
+    margin: 25px 0 25px 0;
 }
-div .dir .login02 {
-    width: 350px;
-    height: 100px;
-    background-color: white;
-    border: 1px solid silver;
-    position: relative;
-    /* left: 10px; */
-    margin: 10px;
-    /* background-color: rgba(var(--d87,255,255,255),1);
-    border: 1px solid rgba(var(--b6a,219,219,219),1); */
-}
-div .dir .login03 {
-    width: 350px;
-    height: 100px;
-    position: relative;
-    left: 10px;
-    margin: 0px;
-    text-align: center;
-    top: 20px;
-}
-div .dir .login03 .icone {
-    width: 136px;
-    height: 40px;
-}
-div .form-user {
+div .dir .login01 .form-user {
     width: 270px;
-    left: 24px;
-    top: 40px;
-    position: relative;
+    height: 125px;
 }
-div .form-user input.input-login {
+div .dir .login01 .form-user input.input-login {
     background-color: rgb(243, 243, 243);
     color: silver;
     border: solid 1px silver;
     height: 30px;
     line-height: 30px;
     width: 270px;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
-div .form-user button{
+div .dir .login01 .form-user button{
     background-color: lightskyblue;
     border: none;
     position: absolute;
     height: 28px;
     width: 270px;
-    border-radius: 4px;
-    margin-top: 10px;
-    /* right: 22px;
-    top: 2px; */
- }
-
-div .login01 .linha-cinza{
+    margin-top: 10px
+}
+div .dir .login01 .linha-cinza{
     height: 1px;
     background-color: silver;
-    position: relative;
-    top: 105px;
+    width : 80%;
+    margin-top: 25px;
 }
 div .login01 .texto-ou {
-    width: 40px;
+    width: 50px;
     background-color: white;
-    position: relative;
-    top: 95px;
-    margin: auto;
     text-align: center;
+    margin-top: -11px;
 }
 div .login01 .facebook-logo{
-    background-image: url("../img/32f0a4f27407.png");
-    background-repeat: no-repeat;
-    background-position: -414px -259px;
     height: 16px;
-    width: 17px;
-    margin: auto;
-    top: 113px;
-    position: relative;
-    left: -80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
 }
-div .login01 .texto-facebook{
-    position: relative;
+div .login01 .facebook-logo img {
+    margin-right: 5px;
+}
+div .login01 .facebook-logo .texto-facebook{
+    /* position: relative;
     top: 96px;
-    left: 95px;
+    left: 95px; */
 }
 div .login01 .texto-esqueceu{
-    position: relative;
-    top: 115px;
-    left: 0;
     font-size: 11px;
     text-align: center;
+    margin-top: 28px;
 }
-div .login02 .texto-cadastre{
-    position: relative;
-    top: 39px;
-    left: 0;
-    font-size: 14px;
-    text-align: center;
+div .dir .login02 {
+    width: 350px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid silver;
+    margin-top: 10px;;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-/* 
-div .logo-instagram {
-    background-image: url("../img/32f0a4f27407.png");
-    background-repeat: no-repeat;
+div .login02 .texto-cadastre {
+    font-size: 13px;
+}
+div .dir .login03 {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+div .dir .login03 .text-get-app {
+    margin: 20px 0 20px 0;
+    font-size: 13px;
+}
+div .dir .login03 .img-get-app {
     display: inline-block;
-    margin: 4px 4px;
+    justify-content: center;
+    align-items: center;
+}
+div .dir .login03 .img-get-app .icone {
+    width: 136px; 
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    div .dir .login01,
+    div .dir .login02,
+    div .dir .login03 {
+        width: 330px;
+    }
 }
 
 
-div .logo-instagram li {
-    background-position: -429px 0px;
+@media (max-width: 740px) {
+    body {
+        background-color: white;
+    }
+    div .esq {
+        display: none;
+    }
+    div .dir .login01,
+    div .dir .login02 {
+        border: 1px solid transparent;
+    }
 }
-.corpo {
-    position: relative;
-    margin: auto;
-} */
+
+

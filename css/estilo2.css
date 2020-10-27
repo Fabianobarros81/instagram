@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding : 0;
+    margin: 0;    
+}
+
+.esq {
+    width: 420px;
+    height: 618px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/mobile.png");
+    background-repeat: no-repeat;
+
+}
+
+.esq img {
+    position: relative;
+    top: 4px;
+    left: 61px;
+}
+
+.dir {
+    width: 500px;
+    height: 618px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.primaria {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secundaria {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secundaria img {
+    height: 51px;
+    width: 175px;
+}
